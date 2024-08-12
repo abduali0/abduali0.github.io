@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry, I Love You</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(135deg, #ffccff, #ff99cc);
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            position: relative;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            max-width: 600px;
+            margin: auto;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container::before,
+        .container::after {
+            content: "🌸";
+            font-size: 2em;
+            position: absolute;
+            color: #66cc66;
+        }
+
+        .container::before {
+            top: -20px;
+            left: -20px;
+        }
+
+        .container::after {
+            bottom: -20px;
+            right: -20px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #ff6699;
+            font-size: 4em;
+            font-weight: bold; /* Bold text */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            color: #ff9999;
+            font-size: 4em; /* Increased size */
+            font-weight: bold; /* Bold text */
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .flower, .heart {
+            font-size: 4em;
+            margin: 10px;
+            display: inline-block;
+            font-weight: bold; /* Bold text */
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .flower {
+            color: #66cc66;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .heart {
+            color: #ff6666;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .hello-kitty {
+            width: 280px;
+            margin-top: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hello-kitty:hover {
+            transform: scale(1.1);
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .button {
+            background-color: #ff6699;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5em;
+            margin: 5px 2px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-family: 'Dancing Script', cursive;
+            font-weight: bold; /* Bold text */
+        }
+
+        .button:hover {
+            background-color: #ff3366;
+            transform: scale(1.05);
+        }
+    </style>
+    <script>
+        function forgiveMe() {
+            alert("Thank you! I promise to do better.");
+        }
+
+        function loveYouToo() {
+            alert("I love you too! Let's stay happy together.");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>I'm Sorry</h1>
+        <div class="flower">&#127804; &#127801; &#127799; &#127800; &#127802;</div>
+        <h2>I Love You</h2>
+        <div class="heart">&#10084;&#65039; &#128151; &#128158; &#128149; &#128156;</div>
+        <img src="https://static.wikia.nocookie.net/sanrio/images/1/10/Hello-kitty.png/revision/latest/scale-to-width-down/280?cb=20171105235741" alt="Hello Kitty" class="hello-kitty">
+
+        <div class="buttons">
+            <button class="button" onclick="forgiveMe()">Forgive Me</button>
+     
